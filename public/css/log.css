@@ -1,0 +1,164 @@
+body{
+    margin: 0px auto;
+    font-family: Amiri;
+}  
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    src: url("../fonts/Amiri/Amiri-Regular.ttf");
+    font-family: Amiri;
+}
+
+header{
+    height: 100px;
+}
+.banner{
+    height: 100%;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.text {
+    background-color: rgba(15, 22, 40, .7);
+    color:  #C1A673;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 2vw;
+    width: 45%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+.harmony{
+    background-color: rgba(15, 22, 40, .7);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 3;
+}
+
+.logo{
+    /*background-color: blue;*/
+    width: 20%;
+    padding-left: 5%;
+    padding-top: 1%;
+    cursor: pointer;
+}
+.logo img{
+    height: 8vw;
+    width: 8vw;
+    margin-top: 1.5vw;
+    border: #C1A673 1px solid;
+}
+nav{
+    /*background-color: blueviolet;*/
+    width: 40%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding-top: 5%;
+    color: #C1A673;
+}
+nav a:hover{
+    font-weight: bolder;
+    text-decoration: none;
+    color: #C1A673;
+}
+#navbar{
+    position: fixed;
+}
+#active{
+    color: wheat;
+    font-weight: bolder;
+}
+
+/* footer */
+footer{
+    height: 22vw;
+    color: #C1A673;
+    background-color: #0F1628;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+
+.c-foot{
+    height: 22vw;
+    color: #C1A673;
+    background-color: #0F1628;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    padding-top: 4vw;
+}
+.foot1, .foot3{
+    width: 25%;
+}
+.foot1{
+    margin-left: auto;
+    padding-left: 3vw;
+    margin-top: 2vw;
+}
+.foot1-c{
+    margin-left: auto;
+    padding-left: 3vw;
+    margin-top: 3vw;
+}
+.foot1 img{
+    width: 100%;
+}
+.foot2{
+    width: 35%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.links > a{
+    text-decoration: none;
+    color: #C1A673;
+    cursor: pointer;
+    font-size: 2.5vw;
+}
+
+
+#btn{
+  border-radius: 4vw;
+  background-color: #0F1628;
+  border: #C1A673 1px solid;
+  color: #C1A673;
+  text-align: center;
+  font-size: 2vw;
+  width: 15vw;
+  height: 4vw;
+  margin-bottom: 1vw;
+  cursor: pointer;
+  font-family: Amiri;
+  margin-left: 40%;
+
+}
+#btn:hover{
+  background-color: #C1A673;
+  color: #0F1628;
+}
