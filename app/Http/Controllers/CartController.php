@@ -7,9 +7,10 @@ use Illuminate\Support\Facades\Auth;
 
 
 use App\Models\Cart;
-use App\Models\Project;
 use App\Models\Receipt;
 use App\Models\Order;
+use App\Models\Project;
+
 
 
 
@@ -37,7 +38,7 @@ class CartController extends Controller
     {
 
         $userID = Auth::id();
-        $cart = Cart::where('user_id',$userID)->where('product_id',$project_id)->first();
+        $cart = Cart::where('user_id',$userID)->where('project_id',$project_id)->first();
         $cart->quantity= $request->get('quantity');
         $cart->save();
         return back();

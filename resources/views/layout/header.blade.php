@@ -59,6 +59,7 @@
                     @else
                         <a href="{{ route('contacts')}}"> CONTACTS </a>
                     @endif
+                    
                 </nav>
             </div>
         </header>

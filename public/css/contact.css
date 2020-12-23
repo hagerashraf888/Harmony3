@@ -176,6 +176,10 @@ footer{
     width: 35%;
     margin-left: 5%;
     margin-right: 10%;
+    margin-top: 4vw;
+}
+.foot3{
+    margin-top: 4vw;
 }
 
 .links > a{

@@ -59,6 +59,8 @@ Route::get('/user/rooms', [MainController::class, 'rooms'])->name('rooms');
 
 Route::get('/pages/harmony', [App\Http\Controllers\HarmonyController::class, 'index'])->name('harmony');
 Route::post('/pages/homes', [App\Http\Controllers\HomesController::class, 'index'])->name('homes');
+Route::get('/pages/homes', [App\Http\Controllers\HomesController::class, 'index'])->name('homes');
+
 Route::get('/pages/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/pages/service', [App\Http\Controllers\ServiceController::class, 'index'])->name('service');
 //Route::get('/pages/projects', [App\Http\Controllers\ProjectsController::class, 'index'])->name('projects');
@@ -76,6 +78,10 @@ foreach ($category_types as $category) {
 	//$cat = str_replace(' ', '', $category->name);
 	Route::get('/user/'.$category->name.'/{id}', [MainController::class, 'display'])->name($category->name);
 }
+
+
+Route::middleware(['admin'])->prefix('/admin')->group(function () 
+{
 
 /* Projects */
 Route::get('/admin/get_projects', [ProjectController::class, 'get_projects'])->name('get_projects');
@@ -100,7 +106,7 @@ Route::post('admin/update_category/{id}',[CategoryController::class, 'update_cat
 
 Route::get('/admin/delete_category/{id}', [CategoryController::class, 'delete_category'])->name('delete_category');
 
-
+});
 
 
 

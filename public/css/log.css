@@ -133,6 +133,11 @@ footer{
     width: 35%;
     margin-left: 5%;
     margin-right: 10%;
+    margin-top: 4vw;
+}
+.foot3{
+    margin-top: 4vw;
+
 }
 
 .links > a{
@@ -161,4 +166,64 @@ footer{
 #btn:hover{
   background-color: #C1A673;
   color: #0F1628;
+  border: #C1A673 1px solid;
+}
+
+
+.dropbtn {
+    background-color: #C1A673;
+    color: #0F1628;
+    font-size: 1.5vw;
+    height: 2vw;
+    width: 3vw;
+    margin: auto;
+    border: 1px solid #C1A673;
+    border-radius: 3vw;
+    cursor: pointer;
+    margin-top: 2vw;
+    padding-bottom: 1vw;
+    padding-right: .5vw;
+    
+/*
+    left: 6vw;
+    text-decoration: none;
+    color: #C1A673;
+    position: fixed;
+    top: .5vw;
+    z-index: 5;
+
+*/
+}
+#down{
+    margin-bottom: .5vw;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 2vw;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(15, 22, 40, .7);
+    width: 100%;
+    box-shadow: 0 2vw 4vw 0 rgba(15, 22, 40, .7);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #C1A673;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #0F1628
+}
+.show {
+    display:block;
+} 
+#out{
+    text-decoration: none;
+    color: #C1A673;
+    width: 15vw;
 }

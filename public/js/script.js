@@ -21,8 +21,12 @@ var navbar = document.getElementById("navbar");
 $(window).scroll(function() {
   if ($(this).scrollTop() > 0) {
     $('#logo').hide();
+    $('.dropdown-content').hide();
+
   } else {
     $('#logo').show();
+    $('.dropdown-content').toggle();
+
   }
 });
 
